@@ -239,28 +239,31 @@
         </div>
       </div>
         <!--Formulario Feedback-->
-    <form enctype="text/plain" action="https://formspree.io/f/myyoyejq" method="POST">
+   
       <div class="collapse" id="Feedback">
         <div class="card card-body fondoBody border-dark">
           <p>Comentarios sobre la pagina</p>
           <div class="mb-3">
-            <label for="email" class="form-label" style="color: white;">Su correo</label>
-            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Ejemplo: zapato@hotmail.com" required="">
+          <form action="https://formspree.io/f/myyoyejq" method="POST">
+            <label class="form-label" style="color: white;">Su correo</label>
+            <input type="email" class="form-control" name="_replyto" placeholder="Ejemplo: zapato@hotmail.com" required>
           </div>
           <div class="mb-3">
-            <label for="feedback" class="form-label" style="color: white;">Mensaje</label>
-            <textarea class="form-control" id="feedback" name="message" rows="3" placeholder="Ideas o comentarios para mejorar la pagina" required=""></textarea>
+            <label class="form-label" style="color: white;">Mensaje</label>
+            <textarea class="form-control" name="message" rows="3" placeholder="Ideas o comentarios para mejorar la pagina" required></textarea>
           </div>
+        
           <button class="btn btn-lg btn-dark link" style="margin-right: 0px;" type="submit" data-bs-target="#" name="enviar">
           Enviar mensaje
-          </button> <button class="btn btn-lg btn-dark link" style="margin-right: 0px; margin-top: 10px;" type="reset" data-bs-target="#">
+          </button> 
+          <button class="btn btn-lg btn-dark link" style="margin-right: 0px; margin-top: 10px;" type="reset" data-bs-target="#">
           Borrar todo
           </button>
-         
+        </form>
           </div>
         </div>
       </div>
-    </form>
+
     <br>
 
     <br><br>
