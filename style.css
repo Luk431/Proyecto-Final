@@ -91,7 +91,7 @@ p {
 }
 
 .contacto{
-  
+    flex-wrap: wrap;
     justify-content: center;
     
 }
