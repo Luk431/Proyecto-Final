@@ -1,0 +1,330 @@
+
+@font-face {
+    font-family: "Lobster";
+    src: url("fuente/Lobster-Regular.ttf");
+    
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.fondoDavid{
+    
+    background-image: url("img/davidfondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    
+    height: 200px;
+    max-height: 300px;
+    display: flex;
+
+}
+
+.fondoBody {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #2f3435 90%);
+
+
+}
+
+
+
+h1 {
+    font-size: xx-large;
+    font-family: "Lobster",serif;
+    color: goldenrod;
+    text-decoration: underline;
+    text-size-adjust: auto;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-family: "Lobster",serif;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    
+}
+
+h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    
+}
+
+p {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.profesion {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.div{
+    margin: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
+   
+}
+
+.contacto{
+    border-right-style: solid;
+    border-right-width: 5px; 
+    border-right-color: white;
+    padding-right: 50px;
+}
+
+.criolla{
+    width: 300px;
+    height: 200px;
+    background-image: url("img/criolla.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    animation:zoomout 2s;
+}
+
+.criolla:hover{
+    animation: zoomin 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: forwards;
+}
+
+.electrica2{
+    width: 300px;
+    height: 200px;
+    background-image: url("img/electrica.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    animation:zoomout 2s;
+
+}
+
+
+.electrica2:hover{
+    animation: zoomin 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: forwards;
+}
+
+.electroAcustica{
+    width: 300px;
+    height: 200px;
+    background-image: url("img/electroacustica.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    animation:zoomout 2s;
+
+}
+
+
+.electroAcustica:hover{
+    animation: zoomin 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: forwards;
+}
+
+
+
+/* Zoom in Keyframes */
+@-webkit-keyframes zoomin {
+    from {transform: scale(1);
+    background-size: cover;
+    overflow: visible;}
+    to {transform: scale(1.2);
+    background-size: cover;}
+}
+
+  /*@keyframes zoomin {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+  } /*End of Zoom in Keyframes */
+
+   /* Zoom out Keyframes */
+ @-webkit-keyframes zoomout {
+    from {transform: scale(1.2);
+    background-size: cover;
+    overflow: visible;}
+    to {transform: scale(1);
+    background-size: cover;}
+ }
+
+  /*@keyframes zoomout {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.67);}
+    100% {transform: scale(1);}
+  }/*End of Zoom out Keyframes */
+
+
+.disabled-electrica{
+    pointer-events: none;
+    background-size: contain;
+    height: 500px;
+    
+}
+
+.disabled-electroAcustica{
+    pointer-events: none;
+    background-size: contain;
+    height: 400px;
+    
+}
+
+.disabled-criolla{
+    pointer-events: none;
+    background-size: contain;
+    height: 400px;
+    
+}
+
+.electrica{
+    width: 300px;
+    height: 100px;
+    background-image: url("img/guitarra.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner{
+    /*background-color: rgba(235, 157, 11, 0.747);*/
+    max-height: 500px;
+    
+    padding-bottom: 10px;
+    
+    
+}
+
+.link{
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
+.link:hover{
+    text-decoration: underline;
+    color: goldenrod;
+    
+}
+.link:link{
+    color: white;
+}
+
+.link:visited{
+    opacity: 0.7;
+}
+
+
+
+/*Iconos de redes sociales*/
+
+.fa-youtube:hover {
+    color:#3B5998;
+    text-decoration:underline;
+    }
+    .fa-facebook-square:hover {
+    opacity:0.5;
+    text-decoration:underline;
+    }
+    .fa-twitter-square:hover {
+    opacity:0.5;
+    text-decoration:underline;
+    }
+    .fa-google-plus-square:hover{
+    opacity:0.5;
+    text-decoration:underline;
+    }
+    .fa-instagram:hover {
+    opacity:0.5;
+    text-decoration:underline;
+    }
+    .fa-linkedin-square:hover{
+    opacity:0.5;
+    text-decoration:underline;
+    }
+    .fa-youtube {
+    font-size: 52px;
+    color: rgb(255, 0, 0);
+    margin:auto;
+    padding: auto;
+    text-decoration:none;
+    }
+    .fa-facebook-square {
+    font-size: 52px;
+    color: rgba(24, 9, 230, 0.849);
+    margin:auto;
+    padding: auto;
+    text-decoration:none;
+    }
+    .fa-twitter-square {
+    font-size: 52px;
+    color: aqua;
+    margin:auto;
+    padding: auto;
+    text-decoration:none;
+    }
+    .fa-google-plus-square {
+    font-size: 52px;
+    color: gray;
+    margin:auto;
+    padding: auto;
+    text-decoration:none;
+    }
+    .fa-instagram {
+    font-size: 52px;
+    color: indianred;
+    margin:auto;
+    padding: auto;
+    text-decoration:none;
+    }
+    .fa-linkedin-square {
+    font-size: 52px;
+    color: gray;
+    margin:auto;
+    padding: auto;
+    text-decoration:none;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+    }
+    .embed-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+/*probar poner imagen en david turza*/
+    .zapato{}
