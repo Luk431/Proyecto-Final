@@ -239,19 +239,19 @@
         </div>
       </div>
         <!--Formulario Feedback-->
-    <form enctype="text/plain" method="POST">
+    <form enctype="text/plain" action="https://formspree.io/f/myyoyejq" method="POST">
       <div class="collapse" id="Feedback">
         <div class="card card-body fondoBody border-dark">
           <p>Comentarios sobre la pagina</p>
           <div class="mb-3">
             <label for="email" class="form-label" style="color: white;">Su correo</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Ejemplo: zapato@hotmail.com" required="">
+            <input type="email" class="form-control" id="email" name="_replyto" placeholder="Ejemplo: zapato@hotmail.com" required="">
           </div>
           <div class="mb-3">
             <label for="feedback" class="form-label" style="color: white;">Mensaje</label>
-            <textarea class="form-control" id="feedback" name="msg" rows="3" placeholder="Ideas o comentarios para mejorar la pagina" required=""></textarea>
+            <textarea class="form-control" id="feedback" name="message" rows="3" placeholder="Ideas o comentarios para mejorar la pagina" required=""></textarea>
           </div>
-          <button class="btn btn-lg btn-dark link" style="margin-right: 0px;" type="button submit" data-bs-target="#" name="enviar">
+          <button class="btn btn-lg btn-dark link" style="margin-right: 0px;" type="submit" data-bs-target="#" name="enviar">
           Enviar mensaje
           </button> <button class="btn btn-lg btn-dark link" style="margin-right: 0px; margin-top: 10px;" type="reset" data-bs-target="#">
           Borrar todo
@@ -264,9 +264,6 @@
     <br>
 
     <br><br>
-    <?php
-    include("sendbyemail.php");
-    ?>
     <script src="img/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
