@@ -387,3 +387,10 @@ p {
         display: flex;
         justify-content: center;
     }
+
+    .centrar-afinador{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+    }
