@@ -392,5 +392,8 @@ p {
         text-align: center;
         display: flex;
         justify-content: center;
+    }
+
+    .borde-afinador{
         border-radius: 10px;
     }
