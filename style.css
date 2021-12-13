@@ -46,6 +46,27 @@ html {
 }
 
 
+.titulo {
+    font-size: 5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: underline;
+    text-size-adjust:initial;
+    display: flex;
+    justify-content: center;
+    text-shadow: black -5px 3px 5px;
+}
+
+.titulo2 {
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: underline;
+    text-size-adjust:initial;
+    display: flex;
+    justify-content: center;
+    text-shadow: black -5px 3px 5px;
+}
 
 h1 {
     font-size: xx-large;
@@ -231,10 +252,10 @@ p {
 }
 
 .link{
-    margin: auto;
-    color: white;
+    color: lightseagreen;
     text-decoration: none;
 }
+
 .link:hover{
     text-decoration: underline;
     color: goldenrod;
@@ -246,6 +267,10 @@ p {
 
 .link:visited{
     opacity: 0.7;
+}
+
+.button {
+    margin: auto;
 }
 
 
